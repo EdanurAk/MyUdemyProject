@@ -1,0 +1,49 @@
+Swagger apilerimizi test edebileceðimiz bir tool aslýnda.
+ama bir postman kadar kapsamlý bir içeriði yok. Mesela postman de
+json ý bir token e baðlayýp bir token alýp tokenin geçerliliðini
+kontrol edebiliyorsunuz. Ama swagger da daha cok get, post, delete
+put gibi biraz daha crud bazlý iþlemlerin testini gerçekleþtirebiliyoruz.
+Bu teslerin sonucunda uygulama size veri dönüþü de yapýyor. Uygulamalarýn verisel olarak da
+karþýlýðýný görebiliyoruz.
+
+Frontend kýsmýnda controller eklerken mvc controller diye ekleyeceðiz api olarak deðil
+çünkü diðer katmandan apiyi içine consume edeceðiz.
+
+ViewImport ilgili namespacelerin sadece model yazarak gelmesini saðlýyordu using... tanýmlamýyoruz tanýmlamayý 
+ViewImport içinde bir kere yapýyoruz.
+
+<form method="post" asp-action="addroom" asp-controller="Room">
+
+mapping klasörü dtolar ile entitylerimi baðlayacaðým sýnýflarýn olacaðý klasör
+veri validasyonunu saðlamak için yazýlan deðerler geçerli mi deðil mi
+bunu saðlamak için front end tarafýna Dtos klasörü oluþturduk.
+
+ASP.NET Core Identity Nedir?
+Kullanýcý arayüzü (UI) giriþ iþlevini destekleyen bir API
+identity kütüphanesi ile kullanýcý ve roller oluþturabiliriz, oluþturmuþ 
+olduðumuz kullanýcýlarýn giriþ, çýkýþ iþlemlerini yönetebiliriz.Rol, claim
+iliþkilerini yönetebiliriz.
+Kullanýcýlarý, þifreleri, profil verilerini, rolleri, istekleri,
+tokenlarý, e-posta onayýný ve daha fazlasýný yönetir.
+
+
+PasswordSignInAsync metodu ASP.NET Identity tarafýndan saðlanan bir yöntemdir
+ve kullanýcýlarýn parolalarýyla giriþ yapmalarýný saðlamak için kullanýlýr. Bu metot, bir kullanýcýnýn kimlik doðrulamasýný gerçekleþtirmek için kullanýlýrken çeþitli parametreleri kabul eder. 
+PasswordSignInAsync(string userName, string password, bool isPersistent, bool lockoutOnFailure);
+serName: Giriþ yapmak isteyen kullanýcýnýn kullanýcý adý veya e-posta adresi.
+password: Kullanýcýnýn girmiþ olduðu parola.
+isPersistent: Kullanýcýnýn tarayýcý kapatýlsa bile oturumun kalýcý olup
+olmadýðýný belirten bir boolean deðeri. "true" ise oturum kalýcý olacak,
+"false" ise tarayýcý kapatýldýðýnda oturum sona erecektir.
+lockoutOnFailure: Oturum açma baþarýsýz olduðunda hesabýn kitlenip kitlenmeyeceðini
+belirten bir boolean deðeri. Eðer "true" ise belirli sayýda hatalý giriþ
+sonrasý hesap kilitlenebilir.
+
+ViewComponent partial view gibidir tabi belli baþlý farklýlýklarý vardýr.
+
+RapidApi için Api consume tamamlamýþ olduk. RapidApi kalsörü içerisinde
+
+JSON WEB TOKEN
+Oldukça güvenli ve çokça kullanýlan bir güvenlik kütüphanesi.
+örneðin bir iþlem gerçekleþtirilecek bu iþlemi gerçekleþtirecek olan kiþinin
+bu iþlemi yapmaya yetkisi var mý?
